@@ -1,0 +1,23 @@
+BASE <https://w3id.org/lmodel/uco-time/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+<Time> CLOSED {
+    (  $<Time_tes> rdf:type . * ;
+       rdf:type [ <Time> ] ?
+    )
+}
+
+<TimeRange> CLOSED {
+    (  $<TimeRange_tes> rdf:type . * ;
+       rdf:type [ <TimeRange> ] ?
+    )
+}
+
+<TimeStamp> CLOSED {
+    (  $<TimeStamp_tes> rdf:type . * ;
+       rdf:type [ <TimeStamp> ] ?
+    )
+}
+
+

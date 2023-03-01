@@ -1,0 +1,8 @@
+{
+   "NCIT": "http://example.org/UNKNOWN/NCIT/",
+   "WIKIDATA": "http://identifiers.org/wikidata/",
+   "linkml": "https://w3id.org/linkml/",
+   "lm_core": "https://w3id.org/lmodel/core/",
+   "sumo": "https://w3id.org/sumo/kb/",
+   "time": "https://w3id.org/lmodel/uco-time/"
+}

@@ -1,0 +1,12 @@
+type Time
+  {
+  }
+
+type TimeRange
+  {
+  }
+
+type TimeStamp
+  {
+  }
+

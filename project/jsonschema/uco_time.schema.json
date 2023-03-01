@@ -1,0 +1,29 @@
+{
+    "$defs": {
+        "Time": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "Time",
+            "type": "object"
+        },
+        "TimeRange": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "TimeRange",
+            "type": "object"
+        },
+        "TimeStamp": {
+            "additionalProperties": false,
+            "description": "",
+            "title": "TimeStamp",
+            "type": "object"
+        }
+    },
+    "$id": "https://w3id.org/lmodel/uco-time",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "uco-time",
+    "type": "object",
+    "version": "1.1.0"
+}

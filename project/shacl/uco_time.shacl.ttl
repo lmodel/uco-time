@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix time: <https://w3id.org/lmodel/uco-time/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+time:Time a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass time:Time .
+
+time:TimeRange a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass time:TimeRange .
+
+time:TimeStamp a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "" ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass time:TimeStamp .
+

@@ -1,0 +1,45 @@
+@prefix WIKIDATA: <http://identifiers.org/wikidata/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix ns1: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sumo: <https://w3id.org/sumo/kb/> .
+@prefix time: <https://w3id.org/lmodel/uco-time/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/lmodel/uco-time.owl.ttl> a owl:Ontology ;
+    rdfs:label "uco-time" ;
+    ns1:IAO_0000700 time:Time,
+        time:TimeRange,
+        time:TimeStamp ;
+    dcterms:license "https://www.apache.org/licenses/LICENSE-2.0" ;
+    dcterms:title "UCO Time" ;
+    pav:version "1.1.0" ;
+    linkml:generation_date "2023-04-12T12:20:52" ;
+    linkml:metamodel_version "1.7.0" ;
+    linkml:source_file "uco_time.yaml" ;
+    linkml:source_file_date "2023-03-01T21:39:40" ;
+    linkml:source_file_size 1736 .
+
+time:Time a owl:Class ;
+    rdfs:label "Time" ;
+    rdfs:comment "" ;
+    skos:exactMatch <http://example.org/UNKNOWN/NCIT/C25207>,
+        WIKIDATA:Q11471,
+        sumo:TimePoint ;
+    skos:relatedMatch sumo:TimeAttribute .
+
+time:TimeRange a owl:Class ;
+    rdfs:label "TimeRange" ;
+    rdfs:comment "" ;
+    skos:exactMatch sumo:TimeInterval .
+
+time:TimeStamp a owl:Class ;
+    rdfs:label "TimeStamp" ;
+    rdfs:comment "" ;
+    skos:exactMatch <http://example.org/UNKNOWN/NCIT/C72669>,
+        WIKIDATA:Q186885 .
+

@@ -1,0 +1,79 @@
+---
+id: https://w3id.org/lmodel/uco-time
+name: uco-time
+title: UCO Time
+description: >-
+  Time classes for Unified Cyber Ontology
+license: https://www.apache.org/licenses/LICENSE-2.0
+
+version: 1.1.0  # sync with primary git repo release tag
+
+## ------------
+##
+## PREFIXES
+## ------------
+# CURIE namespaces (prefixes/base URI's) mappings of prefixes used in the body of
+# the UCOLink Model specification are resolved using a specific precedence order,
+# for use in the generation of the UCOLink Model context.jsonld mappings to
+# namespaces. Any prefixes encountered in the UCOLink Model but not resolved by
+# the following precedence sources, are anonymously declared by linkml as
+# http://example.org/UNKNOWN/ rooted base URI's which should ideally be repaired
+# in one of the precedence lists.
+#
+# 1. The following 'prefixes:' delimited list has first precedence in resolution.
+
+prefixes:
+  linkml: 'https://w3id.org/linkml/'
+  lm_core: 'https://w3id.org/lmodel/core/'
+  sumo: 'https://w3id.org/sumo/kb/'
+  WIKIDATA: 'http://identifiers.org/wikidata/'
+
+  time: 'https://w3id.org/lmodel/uco-time/'
+
+default_prefix: time
+default_range: string
+
+## ------------
+## ENUMS
+## ------------
+enums: {}
+
+## ------------
+## SUBSETS
+## ------------
+subsets: {}
+
+## ------------
+## TYPES
+## ------------
+# imports:
+# - linkml:types
+
+types: {}
+
+## ------------
+## CLASSES
+## ------------
+classes:
+
+  Time:
+    description: >-
+    exact_mappings:
+      - NCIT:C25207
+      - sumo:TimePoint
+      - WIKIDATA:Q11471
+    related_mappings:
+      - sumo:TimeAttribute
+
+  TimeRange:
+    description: >-
+    exact_mappings:
+      - sumo:TimeInterval
+
+  TimeStamp:
+    description: >-
+    exact_mappings:
+      - NCIT:C72669
+      - WIKIDATA:Q186885
+
+...

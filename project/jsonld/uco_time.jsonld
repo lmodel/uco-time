@@ -1,0 +1,88 @@
+{
+  "name": "uco-time",
+  "description": "Time classes for Unified Cyber Ontology",
+  "title": "UCO Time",
+  "id": "https://w3id.org/lmodel/uco-time",
+  "version": "1.1.0",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "prefixes": [
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "lm_core",
+      "prefix_reference": "https://w3id.org/lmodel/core/"
+    },
+    {
+      "prefix_prefix": "sumo",
+      "prefix_reference": "https://w3id.org/sumo/kb/"
+    },
+    {
+      "prefix_prefix": "WIKIDATA",
+      "prefix_reference": "http://identifiers.org/wikidata/"
+    },
+    {
+      "prefix_prefix": "time",
+      "prefix_reference": "https://w3id.org/lmodel/uco-time/"
+    }
+  ],
+  "default_prefix": "time",
+  "default_range": "string",
+  "classes": [
+    {
+      "name": "Time",
+      "definition_uri": "https://w3id.org/lmodel/uco-time/Time",
+      "description": "",
+      "from_schema": "https://w3id.org/lmodel/uco-time",
+      "exact_mappings": [
+        "NCIT:C25207",
+        "sumo:TimePoint",
+        "WIKIDATA:Q11471"
+      ],
+      "related_mappings": [
+        "sumo:TimeAttribute"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/lmodel/uco-time/Time",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "TimeRange",
+      "definition_uri": "https://w3id.org/lmodel/uco-time/TimeRange",
+      "description": "",
+      "from_schema": "https://w3id.org/lmodel/uco-time",
+      "exact_mappings": [
+        "sumo:TimeInterval"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/lmodel/uco-time/TimeRange",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "TimeStamp",
+      "definition_uri": "https://w3id.org/lmodel/uco-time/TimeStamp",
+      "description": "",
+      "from_schema": "https://w3id.org/lmodel/uco-time",
+      "exact_mappings": [
+        "NCIT:C72669",
+        "WIKIDATA:Q186885"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/lmodel/uco-time/TimeStamp",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "uco_time.yaml",
+  "source_file_date": "2023-03-01T21:39:40",
+  "source_file_size": 1736,
+  "generation_date": "2023-04-12T12:20:47",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "project/jsonld/uco_time.context.jsonld",
+    {
+      "@base": "https://w3id.org/lmodel/uco-time/"
+    }
+  ]
+}
